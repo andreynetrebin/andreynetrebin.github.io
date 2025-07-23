@@ -40,10 +40,12 @@ section {
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #35424a;
+    padding: 20px 0;
+    background: #35424a; /* Цвет фона */
     color: #ffffff;
+    margin-top: 20px; /* Отступ сверху для отделения от других секций */
 }
+
 
 h2 {
     color: #35424a;
@@ -64,6 +66,9 @@ img {
     margin-right: 10px;
     vertical-align: middle;
 }
+
+
+
 
 /* Адаптивные стили */
 @media (max-width: 1100px) {
