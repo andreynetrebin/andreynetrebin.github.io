@@ -1,103 +1,123 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+        nav {
+            background: #35424a; /* Цвет фона для навигации */
+            padding: 10px; /* Отступы вокруг навигации */
+        }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-}
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-h1 {
-    margin: 0;
-}
+        /* Стили для навигационных ссылок в секции проектов */
+        #projects nav a {
+            color: #35424a; /* Установите цвет текста на темный цвет */
+            text-decoration: none;
+        }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    background: #ffffff;
-    border-radius: 5px;
-}
+        #projects nav a:hover {
+            color: #007BFF; /* Цвет текста при наведении (можно изменить) */
+        }
 
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #35424a; /* Цвет фона */
-    color: #ffffff;
-    margin-top: 20px; /* Отступ сверху для отделения от других секций */
-}
+        h1 {
+            margin: 0;
+        }
 
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+        }
 
-h2 {
-    color: #35424a;
-}
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #35424a;
+            color: #ffffff;
+            margin-top: 20px;
+        }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
+        h2 {
+            color: #35424a;
+        }
 
-li {
-    margin-bottom: 15px;
-}
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-img {
-    width: 200px; /* Увеличенный размер изображения */
-    height: auto;
-    margin-right: 10px;
-    vertical-align: middle;
-}
+        li {
+            margin-bottom: 15px;
+            border: 1px solid #ddd; /* Цвет рамки */
+            border-radius: 8px; /* Закругление углов */
+            padding: 15px; /* Отступы внутри рамки */
+            background-color: #f9f9f9; /* Цвет фона для каждого проекта */
+        }
 
+        img {
+            width: 200px;
+            height: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
 
+        /* Стили для ul в секции "Обо мне" */
+        #about ul {
+            list-style-type: disc; /* Установите маркеры для списка */
+            padding-left: 20px; /* Отступ слева для списка */
+        }
 
+        #about ul li {
+            color: #35424a; /* Установите цвет текста для элементов списка */
+        }
 
-/* Адаптивные стили */
-@media (max-width: 1100px) {
-    nav ul li {
-        display: block; /* Переключение на блочное отображение для мобильных устройств */
-        margin: 10px 0; /* Уменьшение отступов между элементами навигации */
-    }
+        /* Адаптивные стили */
+        @media (max-width: 1100px) {
+            nav ul li {
+                display: block; /* Переключение на блочное отображение для мобильных устройств */
+                margin: 10px 0; /* Уменьшение отступов между элементами навигации */
+            }
 
-    img {
-        width: 100%; /* Изображения занимают всю ширину контейнера */
-        height: auto; /* Автоматическая высота для сохранения пропорций */
-        margin-bottom: 10px; /* Отступ снизу для разделения изображения и текста */
-    }
+            img {
+                width: 100%; /* Изображения занимают всю ширину контейнера */
+                height: auto; /* Автоматическая высота для сохранения пропорций */
+                margin-bottom: 10px; /* Отступ снизу для разделения изображения и текста */
+            }
 
-    section {
-        margin: 10px; /* Уменьшение отступов для секций */
-    }
-}
+            section {
+                margin: 10px; /* Уменьшение отступов для секций */
+            }
+        }
 
-@media (max-width: 480px) {
-    header {
-        padding: 15px 0; /* Уменьшение отступов в заголовке */
-    }
+        @media (max-width: 480px) {
+            header {
+                padding: 15px 0; /* Уменьшение отступов в заголовке */
+            }
 
-    h1 {
-        font-size: 1.5em; /* Уменьшение размера заголовка */
-    }
+            h1 {
+                font-size: 1.5em; /* Уменьшение размера заголовка */
+            }
 
-    h2 {
-        font-size: 1.2em; /* Уменьшение размера подзаголовка */
-    }
-}
+            h2 {
+                font-size: 1.2em; /* Уменьшение размера подзаголовка */
+            }
+        }
