@@ -9,29 +9,31 @@
 <body>
 <header>
     <h1>Нетребин Андрей</h1>
-    <p>Инженер эксплуатации, программист-разработчик</p>
+    <p>Программист-разработчик, инженер эксплуатации, специалист технической поддержки</p>
     <nav>
         <ul>
             <li><a href="#projects">Проекты</a></li>
             <li><a href="#about">Обо мне</a></li>
         </ul>
     </nav>
-    <p>Контакты: <a href="mailto:netrebin.a89@gmail.com">netrebin.a89@gmail.com</a> | <a
-            href="https://t.me/andreynetrebin">Telegram</a></p>
+    <p>Контакты:
+        <span class="contact-highlight">
+            <a href="mailto:netrebin.a89@gmail.com">netrebin.a89@gmail.com</a> |
+            <a href="https://t.me/andreynetrebin">Telegram</a>
+        </span>
+    </p>
 </header>
 <section id="about">
     <h2>Обо мне</h2>
-    <p>Моя цель занять позицию дата-инженера, чтобы применять свои навыки в обработке и анализе данных для создания
+    <p>Моя цель занять позицию в области инжиниринга данных, чтобы применять свои навыки в обработке и анализе данных для создания
         эффективных и масштабируемых решений.</p>
-    <p>Ключевые навыки: Python, SQL, ETL, HDFS, визуализация данных, автоматизация.</p>
     <p>У меня есть опыт работы в различных областях обработки и анализа данных. Мои ключевые навыки включают:</p>
     <ul>
         <li><strong>Языки программирования:</strong> Python (скрипты, десктопные приложения с PyQT, веб-приложения с
             Flask и Django).
         </li>
-        <li><strong>Работа с базами данных:</strong> Опыт работы с Greenplum для аналитической обработки данных и
-            выполнения сложных SQL-запросов, включая использование PXF для интеграции с внешними источниками, а также с
-            другими SQL и NoSQL базами данных, такими как DB2, Netezza, PostgreSQL, MySQL, ClickHouse и MongoDB.
+        <li><strong>Работа с базами данных:</strong> Опыт работы с различными СУБД для аналитической обработки данных и
+            выполнения сложных SQL-запросов, в том числе с MPP-системами IBM Netezza, Greenplum, ClickHouse.
         </li>
         <li><strong>Обработка данных:</strong> Использование Pandas и PySpark для работы с данными из различных
             источников (базы данных, API, JSON, CSV, XML).
@@ -43,7 +45,7 @@
         <li><strong>Автоматизация задач:</strong> Использование Selenium для автоматизации взаимодействия с
             веб-приложениями.
         </li>
-        <li><strong>Инструменты и технологии:</strong> Опыт работы с брокерами очередей (IBM MQ, Kafka), стеком ELK,
+        <li><strong>Инструменты и технологии:</strong> Опыт работы с брокерами сообщений (IBM MQ, Kafka), стеком ELK,
             Apache Airflow, Docker и Camunda.
         </li>
         <li><strong>Системы контроля версий:</strong> Уверенное использование Git для управления версиями кода,
@@ -58,6 +60,7 @@
         <ul>
             <li><a href="#database-projects">Работа с базами данных</a></li>
             <li><a href="#api-projects">Работа с REST-API</a></li>
+            <li><a href="#brokers-projects">Работа с брокерами сообщений</a></li>
             <li><a href="#automation-projects">Автоматизация</a></li>
             <li><a href="#pet-projects">Pet-проекты</a></li>
             <li><a href="#educational-projects">Учебные проекты</a></li>
@@ -75,6 +78,17 @@
                 <p><strong>Роль:</strong> Разработка библиотеки.</p>
                 <p><strong>Результаты:</strong> Поддержка различных СУБД.</p>
                 <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/db_connector">Ссылка на проект</a></p>
+            </div>
+        </li>
+        <li style="display: flex; align-items: center; margin-bottom: 20px;">
+            <img src="images/monitoring_data_quality.png" alt="ETL-процесс для витрины данных на PostgreSQL" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <div>
+                <h3>Мониторинг качества данных</h3>
+                <p><strong>Введение:</strong> Мониторинг качества данных.</p>
+                <p><strong>Технологии:</strong> Greenplum, Netezza, PostgreSQL, ETL.</p>
+                <p><strong>Роль:</strong> Разработка ETL-процесса.</p>
+                <p><strong>Результаты:</strong> обеспечивает надежный механизм для проверки и актуализации данных.</p>
+                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/monitoring_data_quality">Ссылка на проект</a></p>
             </div>
         </li>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
@@ -137,8 +151,7 @@
             </div>
         </li>
     </ul>
-
-    <h3 id="automation-projects">Автоматизация</h3>
+    <h3 id="brokers-projects">Работа с брокером сообщений</h3>
     <ul>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
             <img src="images/resender_image.png" alt="Переотправки" style="width: 150px; height: auto; margin-bottom: 10px;">
@@ -151,17 +164,9 @@
                 <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/resender_app">Ссылка на проект</a></p>
             </div>
         </li>
-        <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/monitoring_image.png" alt="Мониторинг" style="width: 150px; height: auto; margin-bottom: 10px;">
-            <div>
-                <h3>Мониторинг</h3>
-                <p><strong>Введение:</strong> Приложение для мониторинга данных.</p>
-                <p><strong>Технологии:</strong> Python, Dash.</p>
-                <p><strong>Роль:</strong> Разработка интерфейса.</p>
-                <p><strong>Результаты:</strong> Эффективная визуализация.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/monitoring">Ссылка на проект</a></p>
-            </div>
-        </li>
+    </ul>
+    <h3 id="automation-projects">Автоматизация</h3>
+    <ul>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
             <img src="images/rpa_ibm_service_desc.png" alt="RPA Скрипт" style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
@@ -175,20 +180,6 @@
         </li>
     </ul>
 
-    <h3 id="pet-projects">Pet-проекты</h3>
-    <ul>
-        <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/moviewatchers.png" alt="КиноСмотрители" style="width: 150px; height: auto; margin-bottom: 10px;">
-            <div>
-                <h3>КиноСмотрители</h3>
-                <p><strong>Введение:</strong> Веб-приложение для обмена фильмами.</p>
-                <p><strong>Технологии:</strong> Django, MySQL.</p>
-                <p><strong>Роль:</strong> Разработка приложения.</p>
-                <p><strong>Результаты:</strong> Успешный запуск.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/movie_watcher">Ссылка на проект</a></p>
-            </div>
-        </li>
-    </ul>
 
     <h3 id="educational-projects">Учебные проекты</h3>
     <ul>
@@ -222,7 +213,26 @@
                 <p><strong>Технологии:</strong> PySpark, ClickHouse, Grafana.</p>
                 <p><strong>Роль:</strong> Разработка пайплайна.</p>
                 <p><strong>Результаты:</strong> Эффективная обработка.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/de_course_final_task_3">Ссылка на проект</a></p>
+                <p><strong>Демонстрация:</strong>
+                    <a href="https://github.com/andreynetrebin/de_course_final_task_3">Ссылка на проект</a>
+                </p>
+            </div>
+        </li>
+    </ul>
+    <h3 id="pet-projects">Pet-проекты</h3>
+    <ul>
+        <li style="display: flex; align-items: center; margin-bottom: 20px;">
+            <img src="images/moviewatchers.png" alt="КиноСмотрители" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <div>
+                <h3>КиноСмотрители</h3>
+                <p><strong>Введение:</strong> Веб-приложение для обмена фильмами.</p>
+                <p><strong>Технологии:</strong> Django, MySQL.</p>
+                <p><strong>Роль:</strong> Разработка приложения.</p>
+                <p><strong>Результаты:</strong> Успешный запуск.</p>
+                <p><strong>Демонстрация:</strong>
+                    <a href="https://github.com/andreynetrebin/movie_watcher">Ссылка на проект</a>
+                    <a href="https://moviewatchers.pythonanywhere.com">Развернутое приложение</a>
+                </p>
             </div>
         </li>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
@@ -230,12 +240,16 @@
             <div>
                 <h3>Аналитика вакансий HH</h3>
                 <p><strong>Введение:</strong> Анализ вакансий на платформе HH.</p>
-                <p><strong>Технологии:</strong> Python, BeautifulSoup.</p>
+                <p><strong>Технологии:</strong> Python,MySQL, Flask, requests, Grafana.</p>
                 <p><strong>Роль:</strong> Сбор и анализ данных.</p>
                 <p><strong>Результаты:</strong> Успешный анализ.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/job_analytics">Ссылка на проект</a></p>
+                <p><strong>Демонстрация:</strong>
+                    <a href="https://github.com/andreynetrebin/job_analytics">Ссылка на проект</a>
+                    <a href="https://andreynetrebin.pythonanywhere.com">Развернутое приложение</a>
+                </p>
             </div>
         </li>
+
     </ul>
 </section>
 
