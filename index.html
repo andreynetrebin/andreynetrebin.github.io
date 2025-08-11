@@ -91,7 +91,7 @@
             <div>
                 <h3>Мониторинг качества данных</h3>
                 <p><strong>Введение:</strong> Проект мониторинга качества данных состояния лицевых счетов направлен на обеспечение целостности и актуальности данных между мастер-системой и исторической системой.</p>
-                <p><strong>Технологии:</strong> Python, PostgreSQL, Pandas, Dash.</p>
+                <p><strong>Технологии:</strong> Python, PostgreSQL, psycopg2, nzpy, Pandas, Dash.</p>
                 <p><strong>Роль:</strong> Разработка системы мониторинга для проверки и актуализации данных.</p>
                 <p><strong>Результаты:</strong>
                     <ol>
@@ -107,11 +107,19 @@
             <img src="images/ETL_camunda_mart.png" alt="ETL-процесс для витрины данных на PostgreSQL" style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
                 <h3>ETL-процесс для витрины данных на PostgreSQL</h3>
-                <p><strong>Введение:</strong> Витрина данных для минимизации нагрузки.</p>
-                <p><strong>Технологии:</strong> PostgreSQL, ETL.</p>
-                <p><strong>Роль:</strong> Разработка ETL-процесса.</p>
-                <p><strong>Результаты:</strong> Уменьшение времени обработки.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/camunda_data_mart">Ссылка на проект</a></p>
+                <p><strong>Введение:</strong> Проект направлен на создание витрины данных для оптимизации извлечения данных из исторической таблицы act_hi_detail, содержащей более 750 миллионов записей.</p>
+                <p><strong>Технологии:</strong> PostgreSQL, Python, Pandas, psycopg2.</p>
+                <p><strong>Роль:</strong> Разработка ETL-процесса для эффективной обработки данных.</p>
+                <p><strong>Результаты:</strong>
+                    <ol>
+                        <li>
+                            <strong>Реализован ETL-процесс:</strong><br>
+                            Оптимизировано извлечение данных из БД PostgreSQL, обработка этих данных с использованием Pandas и загрузка в другую БД PostgreSQL, которая будет служить в качестве витрины данных.
+                        </li>
+                    </ol>
+                </p>
+                <p><strong>Итог:</strong> Снижена нагрузка на продуктовую базу данных Camunda, создана витрина данных, используемая для аудита и мониторинга бизнес-процессов предприятия.</p>
+                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/ETL_process">Ссылка на проект</a></p>
             </div>
         </li>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
