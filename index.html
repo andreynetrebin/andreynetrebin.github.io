@@ -9,7 +9,7 @@
 <body>
 <header>
     <h1>Нетребин Андрей</h1>
-    <p>Программист-разработчик, инженер эксплуатации, специалист технической поддержки</p>
+    <p>Программист-разработчик, специалист технической поддержки</p>
     <nav>
         <ul>
             <li><a href="#projects">Проекты</a></li>
@@ -25,7 +25,8 @@
 </header>
 <section id="about">
     <h2>Обо мне</h2>
-    <p>Моя цель занять позицию в области инжиниринга данных, чтобы применять свои навыки в обработке и анализе данных для создания
+    <p>Моя цель занять позицию в области инжиниринга данных, чтобы применять свои навыки в обработке и анализе данных
+        для создания
         эффективных и масштабируемых решений.</p>
     <p>У меня есть опыт работы в различных областях обработки и анализа данных. Мои ключевые навыки включают:</p>
     <ul>
@@ -70,117 +71,157 @@
     <h3 id="database-projects">Работа с базами данных</h3>
     <ul>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/universal_db_connnector.png" alt="Универсальный коннектор к базам данных" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <img src="images/universal_db_connnector.png" alt="Универсальный коннектор к базам данных"
+                 style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
                 <h3>Универсальный коннектор к базам данных</h3>
                 <p><strong>Введение:</strong> Библиотека для подключения к базам данных через JDBC.</p>
                 <p><strong>Технологии:</strong> Python, JDBC, Pandas.</p>
                 <p><strong>Роль:</strong> Разработка библиотеки.</p>
                 <p><strong>Результаты:</strong>
-            <ol>
-                <li>Реализация паттерна Singleton, который обеспечивает повторное использование подключения к базе данных.</li>
-                <li>Обеспечена универсальность доступа к различным базам данных, что позволяет выполнять SQL-запросы и получать данные в формате DataFrame pandas, для их дальнейшей обработки.</li>
-            </ol>
+                <ol>
+                    <li>
+                        <strong>Реализация паттерна Singleton:</strong><br>
+                        Обеспечивает повторное использование подключения к базе данных, что снижает потребление ресурсов
+                        и предотвращает конфликты в многопоточных приложениях.
+                    </li>
+                    <li>
+                        <strong>Поддержка нескольких баз данных:</strong><br>
+                        Позволяет выполнять SQL-запросы и получать данные в формате DataFrame pandas, что упрощает
+                        работу с различными СУБД.
+                    </li>
+                </ol>
                 </p>
-                <p><strong>Итог:</strong> Упрощает и ускоряет разработку приложений, связанных с подключением к БД и обработкой данных, что положительно влияет на производственный процесс и повышает эффективность разработки.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/db_connector">Ссылка на проект</a></p>
+                <p><strong>Итог:</strong> Упрощает и ускоряет разработку небольших приложений и скриптов, связанных с
+                    подключением к БД и обработкой данных, что положительно влияет на производственный процесс и
+                    повышает эффективность разработки.</p>
+                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/db_connector">Ссылка на
+                    проект</a></p>
             </div>
         </li>
+
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/monitoring_data_quality.png" alt="ETL-процесс для витрины данных на PostgreSQL" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <img src="images/monitoring_data_quality.png" alt="Мониторинг качества данных"
+                 style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
                 <h3>Мониторинг качества данных</h3>
-                <p><strong>Введение:</strong> Проект мониторинга качества данных состояния лицевых счетов направлен на обеспечение целостности и актуальности данных между мастер-системой и исторической системой.</p>
+                <p><strong>Введение:</strong> Проект нацелен на мониторинг качества данных состояния лицевых счетов,
+                    обеспечивая целостность и актуальность данных между мастер-системой и исторической системой.</p>
                 <p><strong>Технологии:</strong> Python, PostgreSQL, psycopg2, nzpy, Pandas, Dash.</p>
                 <p><strong>Роль:</strong> Разработка системы мониторинга для проверки и актуализации данных.</p>
                 <p><strong>Результаты:</strong>
-                    <ol>
-                        <li>Реализован конвейер по выгрузке данных из систем источников и загрузке в систему мониторинга.</li>
-                        <li>Проведение проверок данных между системами и формирование отчетов с результатами, включая визуализацию в виде дашборда.</li>
-                    </ol>
+                <ol>
+                    <li>
+                        <strong>Реализован конвейер:</strong><br>
+                        Выгрузка данных из систем источников и загрузка в систему мониторинга.
+                    </li>
+                    <li>
+                        <strong>Проведение проверок:</strong><br>
+                        Проверка данных между системами и формирование отчетов с результатами, включая визуализацию в
+                        виде дашборда.
+                    </li>
+                </ol>
                 </p>
-                <p><strong>Итог:</strong> Мониторинг качества данных способствует повышению надежности и актуальности информации, что улучшает принятие решений и оптимизирует бизнес-процессы на предприятии.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/monitoring_data_quality">Ссылка на проект</a></p>
+                <p><strong>Итог:</strong> Мониторинг качества данных способствует повышению надежности и актуальности
+                    информации, что улучшает принятие решений и оптимизирует бизнес-процессы на предприятии.</p>
+                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/monitoring_data_quality">Ссылка
+                    на проект</a></p>
             </div>
         </li>
+
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/ETL_camunda_mart.png" alt="ETL-процесс для витрины данных на PostgreSQL" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <img src="images/ETL_camunda_mart.png" alt="ETL-процесс для витрины данных на PostgreSQL"
+                 style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
                 <h3>ETL-процесс для витрины данных на PostgreSQL</h3>
-                <p><strong>Введение:</strong> Проект направлен на создание витрины данных для оптимизации извлечения данных из таблицы act_hi_detail ПО Camunda.</p>
+                <p><strong>Введение:</strong> Проект нацелен на создание витрины данных для оптимизации извлечения
+                    данных из таблицы act_hi_detail ПО Camunda.</p>
                 <p><strong>Технологии:</strong> PostgreSQL, Python, Pandas, psycopg2.</p>
                 <p><strong>Роль:</strong> Разработка ETL-процесса для эффективной обработки данных.</p>
                 <p><strong>Результаты:</strong>
-                    <ol>
-                        <li>
-                            <strong>Реализован ETL-процесс:</strong><br>
-                            Оптимизировано извлечение данных из БД PostgreSQL, обработка этих данных с использованием Pandas и загрузка в другую БД PostgreSQL, которая будет служить в качестве витрины данных.
-                        </li>
-                    </ol>
+                <ol>
+                    <li>
+                        <strong>Реализован ETL-процесс:</strong><br>
+                        Оптимизировано извлечение данных из БД PostgreSQL, обработка этих данных с использованием Pandas
+                        и загрузка в другую БД PostgreSQL, которая будет служить в качестве витрины данных.
+                    </li>
+                </ol>
                 </p>
-                <p><strong>Итог:</strong> Снижена нагрузка на продуктовую базу данных Camunda, создана витрина данных, используемая для аудита и мониторинга бизнес-процессов предприятия.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/ETL_process">Ссылка на проект</a></p>
+                <p><strong>Итог:</strong> Снижена нагрузка на продуктовую базу данных Camunda, создана витрина данных,
+                    используемая для аудита и мониторинга бизнес-процессов предприятия.</p>
+                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/ETL_process">Ссылка на
+                    проект</a></p>
             </div>
         </li>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/database_netezza.png" alt="Специфика работы с Netezza" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <img src="images/netezza.png" alt="Специфика работы с Netezza"
+                 style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
                 <h3>Специфика работы с Netezza</h3>
-                <p><strong>Введение:</strong> Проект направлен на изучение архитектуры Netezza, особенностей организации данных, методов мониторинга и оптимизации запросов.</p>
+                <p><strong>Введение:</strong> Проект нацелен на изучение архитектуры Netezza, особенностей организации
+                    данных, методов мониторинга и оптимизации запросов.</p>
                 <p><strong>Технологии:</strong> Netezza, SQL, Python, Faker, Pandas.</p>
                 <p><strong>Роль:</strong> Разработка тестовых таблиц и методов оптимизации запросов.</p>
                 <p><strong>Результаты:</strong>
-                    <ol>
-                        <li>
-                            <strong>Создание тестовых таблиц:</strong><br>
-                            Проверка распределения данных по сегментам.
-                        </li>
-                        <li>
-                            <strong>Рассмотрены встроенные инструменты мониторинга:</strong><br>
-                            Использование системных представлений и команд для анализа выполнения запросов и выявления перекосов данных.
-                        </li>
-                        <li>
-                            <strong>Изучены методы оптимизации запросов:</strong><br>
-                            Применение ключей распределения и организации для повышения производительности.
-                        </li>
-                    </ol>
+                <ol>
+                    <li>
+                        <strong>Создание тестовых таблиц:</strong><br>
+                        Проверка распределения данных по сегментам.
+                    </li>
+                    <li>
+                        <strong>Рассмотрены встроенные инструменты мониторинга:</strong><br>
+                        Использование системных представлений и команд для анализа выполнения запросов и выявления
+                        перекосов данных.
+                    </li>
+                    <li>
+                        <strong>Изучены методы оптимизации запросов:</strong><br>
+                        Применение ключей распределения и организации для повышения производительности.
+                    </li>
+                </ol>
                 </p>
-                <p><strong>Итог:</strong> Полученные знания позволяют повысить производительность обработки данных и улучшают эффективность выполнения запросов, что критически важно для аналитических задач.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/netezza_project">Ссылка на проект</a></p>
+                <p><strong>Итог:</strong> Полученные знания позволяют повысить производительность обработки данных и
+                    улучшают эффективность выполнения запросов, что критически важно для аналитических задач.</p>
+                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/netezza_project">Ссылка на
+                    проект</a></p>
             </div>
         </li>
-<li style="display: flex; align-items: center; margin-bottom: 20px;">
-    <img src="images/database_greenplum.png" alt="Специфика работы с Greenplum" style="width: 150px; height: auto; margin-bottom: 10px;">
-    <div>
-        <h3>Специфика работы с Greenplum</h3>
-        <p><strong>Введение:</strong> Проект нацелен на изучение архитектуры Greenplum, особенностей хранения данных, методов сжатия, распределения данных по сегментам, использования встроенных инструментов мониторинга и методов оптимизации запросов.</p>
-        <p><strong>Технологии:</strong> Greenplum, SQL, PXF.</p>
-        <p><strong>Роль:</strong> Анализ и оптимизация работы с данными в Greenplum.</p>
-        <p><strong>Результаты:</strong>
-            <ol>
-                <li>
-                    <strong>Создание тестовых таблиц:</strong><br>
-                    Проверка распределения данных по сегментам.
-                </li>
-                <li>
-                    <strong>Рассмотрены встроенные инструменты мониторинга:</strong><br>
-                    Использование системных представлений и команд для анализа выполнения запросов.
-                </li>
-                <li>
-                    <strong>Изучены методы оптимизации запросов:</strong><br>
-                    Применение различных методов для повышения производительности обработки данных.
-                </li>
-                <li>
-                    <strong>Рассмотрен и изучен фреймворк PXF:</strong><br>
-                    Интеграция данных из различных источников и оптимизация работы с ними.
-                </li>
-            </ol>
-        </p>
-        <p><strong>Итог:</strong> Полученные знания позволяют повысить производительность обработки данных и улучшают эффективность выполнения запросов, что критически важно для аналитических задач.</p>
-        <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/greenplum_project">Ссылка на проект</a></p>
-    </div>
-</li>
 
+        <li style="display: flex; align-items: center; margin-bottom: 20px;">
+            <img src="images/greenplum.png" alt="Специфика работы с Greenplum"
+                 style="width: 150px; height: auto; margin-bottom: 10px;">
+            <div>
+                <h3>Специфика работы с Greenplum</h3>
+                <p><strong>Введение:</strong> Проект нацелен на изучение архитектуры Greenplum, особенностей хранения
+                    данных, методов сжатия, распределения данных по сегментам, использования встроенных инструментов
+                    мониторинга и методов оптимизации запросов.</p>
+                <p><strong>Технологии:</strong> Greenplum, SQL, Python, PXF.</p>
+                <p><strong>Роль:</strong> Анализ и оптимизация работы с данными в Greenplum.</p>
+                <p><strong>Результаты:</strong>
+                <ol>
+                    <li>
+                        <strong>Создание тестовых таблиц:</strong><br>
+                        Проверка распределения данных по сегментам.
+                    </li>
+                    <li>
+                        <strong>Рассмотрены встроенные инструменты мониторинга:</strong><br>
+                        Использование системных представлений и команд для анализа выполнения запросов.
+                    </li>
+                    <li>
+                        <strong>Изучены методы оптимизации запросов:</strong><br>
+                        Применение различных методов для повышения производительности обработки данных.
+                    </li>
+                    <li>
+                        <strong>Рассмотрен и изучен фреймворк PXF:</strong><br>
+                        Интеграция данных из различных источников и оптимизация работы с ними.
+                    </li>
+                </ol>
+                </p>
+                <p><strong>Итог:</strong> Полученные знания позволяют повысить производительность обработки данных и
+                    улучшают эффективность выполнения запросов, что критически важно для аналитических задач.</p>
+                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/greenplum_project">Ссылка
+                    на проект</a></p>
+            </div>
+        </li>
     </ul>
 
     <h3 id="api-projects">Работа с REST-API</h3>
@@ -189,124 +230,270 @@
             <img src="images/api-tool.png" alt="REST API Tool" style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
                 <h3>REST API Tool</h3>
-                <p><strong>Введение:</strong> Библиотека для работы с REST API.</p>
-                <p><strong>Технологии:</strong> Python, REST API.</p>
+                <p><strong>Введение:</strong> Библиотека на Python для работы с REST API, поддерживающая аутентификацию,
+                    операции с файлами.</p>
+                <p><strong>Технологии:</strong> Python, REST API, Requests.</p>
                 <p><strong>Роль:</strong> Разработка библиотеки.</p>
-                <p><strong>Результаты:</strong> Упрощение интеграции.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/api-tool">Ссылка на проект</a></p>
+                <p><strong>Результаты:</strong>
+                <ol>
+                    <li>
+                        <strong>Поддержка всех HTTP методов:</strong><br>
+                        Реализована поддержка методов GET, POST, PUT, PATCH, DELETE для работы с API.
+                    </li>
+                    <li>
+                        <strong>Гибкая аутентификация:</strong><br>
+                        Реализована поддержка различных методов аутентификации, включая Bearer, Basic и API ключи.
+                    </li>
+                    <li>
+                        <strong>Загрузка/скачивание файлов:</strong><br>
+                        Возможность работы с файлами через API, включая их загрузку и скачивание.
+                    </li>
+                </ol>
+                </p>
+                <p><strong>Итог:</strong> Библиотека упрощает и ускоряет разработку приложений, связанных с интеграцией
+                    REST API, что положительно влияет на производственный процесс и повышает эффективность разработки.
+                </p>
+                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/api-tool">Ссылка на
+                    проект</a></p>
             </div>
-        </li>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/hdfs_api.png" alt="WebHDFS Клиент" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <img src="images/hdfs_api.png" alt="WebHDFS Клиент"
+                 style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
                 <h3>WebHDFS Клиент</h3>
-                <p><strong>Введение:</strong> Клиент для работы с HDFS.</p>
+                <p><strong>Введение:</strong> Клиент WebHDFS для Python, использующий пользовательский инструмент API
+                    для работы с HDFS.</p>
                 <p><strong>Технологии:</strong> Python, HDFS.</p>
-                <p><strong>Роль:</strong> Разработка клиента.</p>
-                <p><strong>Результаты:</strong> Упрощение работы с HDFS.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/webhdfs_client">Ссылка на проект</a></p>
+                <p><strong>Роль:</strong> Разработка клиента для выполнения операций с HDFS.</p>
+                <p><strong>Результаты:</strong>
+                <ol>
+                    <li>
+                        <strong>Поддержка основных операций с HDFS:</strong><br>
+                        Реализованы операции создания директорий, загрузки и чтения файлов, удаления и переименования.
+                    </li>
+                    <li>
+                        <strong>Получение метаданных:</strong><br>
+                        Возможность получения метаданных файлов и директорий для удобства работы.
+                    </li>
+                </ol>
+                </p>
+                <p><strong>Итог:</strong> Клиент упрощает взаимодействие с HDFS, обеспечивая удобный интерфейс для
+                    выполнения операций и управления данными.</p>
+                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/webhdfs-client">Ссылка на
+                    проект</a></p>
             </div>
         </li>
     </ul>
     <h3 id="brokers-projects">Работа с брокером сообщений</h3>
     <ul>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/resender_image.png" alt="Переотправки" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <img src="images/resender_image.png" alt="Resender"
+                 style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
-                <h3>Переотправки</h3>
-                <p><strong>Введение:</strong> Flask-приложение для отправки сообщений в IBM MQ.</p>
-                <p><strong>Технологии:</strong> Flask, IBM MQ.</p>
-                <p><strong>Роль:</strong> Разработка приложения.</p>
-                <p><strong>Результаты:</strong> Упрощение процесса.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/resender_app">Ссылка на проект</a></p>
+                <h3>Resender</h3>
+                <p><strong>Введение:</strong> Flask-приложение для генерации и отправки сообщений (XML, JSON) в брокер
+                    сообщений IBM MQ из различных источников данных.</p>
+                <p><strong>Технологии:</strong> Python, Flask, IBM MQ, REST API.</p>
+                <p><strong>Роль:</strong> Разработка приложения для генерации и отправки сообщений.</p>
+                <p><strong>Результаты:</strong>
+                <ol>
+                    <li>Интуитивно понятный интерфейс для пользователей.</li>
+                    <li>Админская-панель для управления пользователями и процессами.</li>
+                    <li>Обеспечен модульный подход, позволяющий расширять и встраивать новые виды процессов в
+                        зависимости от возникающих потребностей предприятия.
+                    </li>
+                </ol>
+                </p>
+                <p><strong>Итог:</strong> Приложение предоставляет удобный интерфейс и служит инструментом по устранению
+                    инцидентов при взаимодействии различных подсистем и процессов, возникающих после технических сбоев и
+                    аварий.</p>
+                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/resender_app">Ссылка на
+                    проект</a></p>
             </div>
         </li>
     </ul>
     <h3 id="automation-projects">Автоматизация</h3>
     <ul>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/rpa_ibm_service_desc.png" alt="RPA Скрипт" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <img src="images/rpa_ibm_service_desk.png" alt="RPA Скрипт для Автоматизированного Приема Заявок"
+                 style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
-                <h3>RPA Скрипт</h3>
-                <p><strong>Введение:</strong> Скрипт для автоматизации извлечения данных.</p>
-                <p><strong>Технологии:</strong> RPA, Python.</p>
-                <p><strong>Роль:</strong> Разработка скрипта.</p>
-                <p><strong>Результаты:</strong> Упрощение управления.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/rpa_getting_work_tasks">Ссылка на проект</a></p>
+                <h3>RPA-скрипт для приема заявок в системе IBM SmartCloud Control Desk</h3>
+                <p><strong>Введение:</strong> Скрипт автоматизирует извлечение данных о рабочих заданиях из IBM
+                    SmartCloud Control Desk и их сохранение в Excel для дальнейшей обработки.</p>
+                <p><strong>Технологии:</strong> Python, Selenium, BeautifulSoup.</p>
+                <p><strong>Роль:</strong> Разработка скрипта для автоматизации процессов.</p>
+                <p><strong>Результаты:</strong>
+                <ol>
+                    <li>Автоматизация процесса приема заявок из системы в работу, что значительно ускоряет обработку.
+                    </li>
+                    <li>Учет принятых заявок в Excel, что упрощает дальнейшую обработку и отчетность.</li>
+                </ol>
+                </p>
+                <p><strong>Итог:</strong> Скрипт существенно снижает трудозатраты по приему заявок, что позволяет
+                    исполнять регламенты и сроки, улучшая общую эффективность работы с заявками.</p>
+                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/rpa_getting_work_tasks">Ссылка
+                    на проект</a></p>
             </div>
         </li>
+
     </ul>
 
 
     <h3 id="educational-projects">Учебные проекты</h3>
     <ul>
+    <li style="display: flex; align-items: center; margin-bottom: 20px;">
+        <img src="https://github.com/user-attachments/assets/88e99936-111f-4877-a9ba-e3aa499620e3" alt="Анализ данных с использованием PySpark и ClickHouse"
+             style="width: 150px; height: auto; margin-bottom: 10px;">
+        <div>
+            <h3>Анализ данных с использованием PySpark и ClickHouse</h3>
+            <p><strong>Введение:</strong> Проект нацелен на анализ данных об объектах недвижимости с использованием PySpark и ClickHouse, организованный с помощью Apache Airflow.</p>
+            <p><strong>Технологии:</strong> PySpark, ClickHouse, Apache Airflow, Docker.</p>
+            <p><strong>Роль:</strong> Разработка автоматизированного пайплайна для обработки и анализа данных.</p>
+            <p><strong>Результаты:</strong>
+            <ol>
+                <li>Загрузка данных из CSV файла в DataFrame PySpark и проверка их корректности.</li>
+                <li>Преобразование текстовых и числовых полей в соответствующие типы данных.</li>
+                <li>Вычисление среднего и медианного года постройки зданий.</li>
+                <li>Определение топ-10 областей и городов с наибольшим количеством объектов.</li>
+                <li>Загрузка обработанных данных в ClickHouse и выполнение SQL-запросов для анализа.</li>
+            </ol>
+            </p>
+            <p>
+                <strong>Итог:</strong> Проект обеспечивает эффективный процесс анализа данных об объектах недвижимости, позволяя получать полезную информацию о зданиях и их характеристиках.
+            </p>
+            <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/de_course_final_task_1">Ссылка на проект</a></p>
+        </div>
+    </li>
+
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/de_course_task1.png" alt="Курс Проект 1" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <img src="images/de_final_task2.png" alt="Анализ данных с использованием PySpark и PostgreSQL"
+                 style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
-                <h3>Разработка ETL-пайплайна c PySpark и ClickHouse</h3>
-                <p><strong>Введение:</strong> ETL-пайплайн для обработки данных.</p>
-                <p><strong>Технологии:</strong> PySpark, ClickHouse.</p>
-                <p><strong>Роль:</strong> Разработка пайплайна.</p>
-                <p><strong>Результаты:</strong> Эффективная обработка.</p>
-                <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/de_course_final_task_1">Ссылка на проект</a></p>
-            </div>
-        </li>
-        <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/de_final_task2.png" alt="Курс Проект 2" style="width: 150px; height: auto; margin-bottom: 10px;">
-            <div>
-                <h3>Разработка ETL-пайплайна c PySpark и PostgreSQL</h3>
-                <p><strong>Введение:</strong> Обработка данных о полетах.</p>
-                <p><strong>Технологии:</strong> PySpark, PostgreSQL.</p>
-                <p><strong>Роль:</strong> Разработка пайплайна.</p>
-                <p><strong>Результаты:</strong> Успешная загрузка.</p>
+                <h3>Анализ данных с использованием PySpark и PostgreSQL</h3>
+                <p><strong>Введение:</strong> Проект нацелен на обработку данных о полетах с использованием Apache Airflow и PySpark.</p>
+                <p><strong>Технологии:</strong> PySpark, PostgreSQL, Apache Airflow, Docker.</p>
+                <p><strong>Роль:</strong> Разработка автоматизированного пайплайна для обработки и анализа данных.</p>
+                <p><strong>Результаты:</strong>
+                <ol>
+                    <li>Загрузка данных из CSV файла в DataFrame PySpark и проверка их корректности.</li>
+                    <li>Преобразование данных в нужные форматы и добавление новых столбцов для анализа.</li>
+                    <li>Анализ данных, включая нахождение топ-5 авиалиний с наибольшей средней задержкой и вычисление процента отмененных рейсов.</li>
+                    <li>Загрузка очищенных данных в PostgreSQL и выполнение аналитических операций.</li>
+                </ol>
+                </p>
+                <p>
+                    <strong>Итог:</strong> Проект обеспечивает надежный и эффективный процесс обработки данных о полетах, позволяя получать полезную информацию и проводить анализ задержек и отмен рейсов.
+                </p>
                 <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/de_course_final_task_2">Ссылка на проект</a></p>
             </div>
         </li>
-        <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/de_course_final_task3.png" alt="Курс Проект 3" style="width: 150px; height: auto; margin-bottom: 10px;">
-            <div>
-                <h3>Разработка ETL-пайплайна c PySpark, PostgreSQL, ClickHouse и Grafana</h3>
-                <p><strong>Введение:</strong> Конвейер обработки данных о продажах.</p>
-                <p><strong>Технологии:</strong> PySpark, ClickHouse, Grafana.</p>
-                <p><strong>Роль:</strong> Разработка пайплайна.</p>
-                <p><strong>Результаты:</strong> Эффективная обработка.</p>
-                <p><strong>Демонстрация:</strong>
-                    <a href="https://github.com/andreynetrebin/de_course_final_task_3">Ссылка на проект</a>
-                </p>
-            </div>
-        </li>
+    <li style="display: flex; align-items: center; margin-bottom: 20px;">
+        <img src="images/de_course_final_task3.png" alt="Анализ данных с использованием PySpark, PostgreSQL, ClickHouse и Grafana"
+             style="width: 150px; height: auto; margin-bottom: 10px;">
+        <div>
+            <h3>Анализ данных с использованием PySpark, PostgreSQL, ClickHouse и Grafana</h3>
+            <p><strong>Введение:</strong> Проект нацелен на создание конвейера обработки данных для анализа продаж.</p>
+            <p><strong>Технологии:</strong> PySpark, PostgreSQL, ClickHouse, Grafana, Apache Airflow, Docker.</p>
+            <p><strong>Роль:</strong> Разработка автоматизированного пайплайна для обработки и анализа данных.</p>
+            <p><strong>Результаты:</strong>
+            <ol>
+                <li>Генерация реалистичных данных о 1 миллионе продаж за последний год.</li>
+                <li>Очистка и предобработка данных, включая удаление дубликатов.</li>
+                <li>Загрузка очищенных данных в PostgreSQL и выполнение аналитических операций.</li>
+                <li>Перенос агрегированных данных в ClickHouse для быстрого анализа.</li>
+            </ol>
+            </p>
+            <p>
+                <strong>Итог:</strong> Проект обеспечивает надежный и эффективный процесс обработки данных, позволяя получать полезную информацию о продажах и визуализировать ее в Grafana.
+            </p>
+            <p><strong>Демонстрация:</strong> <a href="https://github.com/andreynetrebin/de_course_final_task_3">Ссылка на проект</a></p>
+        </div>
+    </li>
+
     </ul>
     <h3 id="pet-projects">Pet-проекты</h3>
     <ul>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/moviewatchers.png" alt="КиноСмотрители" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <img src="images/moviewatchers.png" alt="КиноСмотрители"
+                 style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
                 <h3>КиноСмотрители</h3>
-                <p><strong>Введение:</strong> Веб-приложение для обмена фильмами.</p>
-                <p><strong>Технологии:</strong> Django, MySQL.</p>
-                <p><strong>Роль:</strong> Разработка приложения.</p>
-                <p><strong>Результаты:</strong> Успешный запуск.</p>
-                <p><strong>Демонстрация:</strong>
+                <p><strong>Введение:</strong> Веб-приложение для обмена информацией о просмотренных фильмах,
+                    разработанное с использованием Django и MySQL.</p>
+                <p><strong>Технологии:</strong> Python, Django, MySQL, REST-API, OAuth</p>
+                <p><strong>Роль:</strong> Разработка Django-приложения.</p>
+                <p><strong>Результаты:</strong>
+                <ol>
+                    <li>Аутентификация в приложении с использованием OAuth через сервисы Yandex, Google.</li>
+                    <li>Обеспечен доступ к информации о том, кто из сообщества и какие проводил активности с фильмами
+                        или списками.
+                    </li>
+                    <li>Интеграция с API Telegram для отправки пользователям различной вида рассылок по фильмам и
+                        спискам.
+                    </li>
+                    <li>Пользователи могут вести личные списки фильмов и получать информацию о просмотренных фильмах.
+                    </li>
+                    <li>Учёт активностей пользователей, ведения рейтинга.</li>
+                    <li>Реализована возможность получения рекомендаций о кинопремьерах.</li>
+                </ol>
+                </p>
+                <p><strong>Итог:</strong> Приложение предоставляет пользователям удобный интерфейс для того, чтобы
+                    делиться своими впечатлениями о фильмах, находить новые интересные ленты и взаимодействовать с
+                    единомышленниками. Кроме того, пользователи получают полезные рассылки с актуальной информацией о
+                    новых фильмах и персонализированные рекомендации, что делает процесс выбора фильмов более
+                    увлекательным и информативным.</p>
+                <p>
+                <p>
+                    <strong>Демонстрация:</strong>
+                    <br>
                     <a href="https://github.com/andreynetrebin/movie_watcher">Ссылка на проект</a>
+                    <br>
                     <a href="https://moviewatchers.pythonanywhere.com">Развернутое приложение</a>
                 </p>
             </div>
         </li>
         <li style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="images/job_analytics.png" alt="Аналитика вакансий HH" style="width: 150px; height: auto; margin-bottom: 10px;">
+            <img src="images/job_analytics.png" alt="HH API Приложение"
+                 style="width: 150px; height: auto; margin-bottom: 10px;">
             <div>
-                <h3>Аналитика вакансий HH</h3>
-                <p><strong>Введение:</strong> Анализ вакансий на платформе HH.</p>
-                <p><strong>Технологии:</strong> Python,MySQL, Flask, requests, Grafana.</p>
-                <p><strong>Роль:</strong> Сбор и анализ данных.</p>
-                <p><strong>Результаты:</strong> Успешный анализ.</p>
-                <p><strong>Демонстрация:</strong>
+                <h3>HH API Приложение</h3>
+                <p><strong>Введение:</strong> Проект направлен на создание приложения для аналитики вакансий на основе
+                    поисковых запросов пользователей.</p>
+                <p><strong>Технологии:</strong> Python, Flask, MySQL, REST-API, Grafana.</p>
+                <p><strong>Роль:</strong> Разработка Flask-приложения для сбора, анализа и визуализации данных о
+                    вакансиях.</p>
+                <p><strong>Результаты:</strong>
+                <ol>
+                    <li>
+                        <strong>Отправка заявок:</strong><br>
+                        Пользователи могут отправлять заявки на сбор данных по ключевым словам.
+                    </li>
+                    <li>
+                        <strong>Управление запросами:</strong><br>
+                        Возможность просмотра и управления поисковыми запросами через админский дашборд.
+                    </li>
+                    <li>
+                        <strong>Уведомления:</strong><br>
+                        Получение уведомлений о новых вакансиях.
+                    </li>
+                    <li>
+                        <strong>Визуализация:</strong><br>
+                        Аналитическая информация представлена в виде дашбордов Grafana.
+                    </li>
+                </ol>
+                </p>
+                <p><strong>Итог:</strong> Приложение предоставляет пользователям удобный доступ к аналитической
+                    информации о вакансиях, что способствует более эффективному поиску работы.</p>
+                <p>
+                    <strong>Демонстрация:</strong>
+                    <br>
                     <a href="https://github.com/andreynetrebin/job_analytics">Ссылка на проект</a>
+                    <br>
                     <a href="https://andreynetrebin.pythonanywhere.com">Развернутое приложение</a>
                 </p>
             </div>
         </li>
-
     </ul>
 </section>
 

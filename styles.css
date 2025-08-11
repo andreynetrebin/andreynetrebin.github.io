@@ -84,7 +84,7 @@
             padding: 0;
         }
 
-        li {
+        nav ul li {
             margin-bottom: 15px;
             border: 1px solid #ddd; /* Цвет рамки */
             border-radius: 8px; /* Закругление углов */
